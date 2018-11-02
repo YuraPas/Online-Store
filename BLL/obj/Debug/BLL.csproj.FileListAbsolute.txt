@@ -1,0 +1,5 @@
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\BLL\bin\Debug\BL.dll
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\BLL\bin\Debug\BL.pdb
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\BLL\obj\Debug\BL.dll
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\BLL\obj\Debug\BL.pdb
