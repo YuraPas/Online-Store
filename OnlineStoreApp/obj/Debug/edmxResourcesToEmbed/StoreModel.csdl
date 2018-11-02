@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnlineStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C_order_">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="product_id" Type="Int32" Nullable="false" />
+    <Property Name="sell_time" Type="DateTime" Precision="3" Nullable="false" />
+    <NavigationProperty Name="product_id1" Relationship="Self.FK_user_product_product" FromRole="C_order_" ToRole="product_id" />
+  </EntityType>
+  <EntityType Name="discount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="product_id" Type="Int32" Nullable="false" />
+    <Property Name="discount1" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="product_id1" Relationship="Self.FK_discount_product_id" FromRole="discount" ToRole="product_id" />
+    <NavigationProperty Name="user_id" Relationship="Self.FK_discount_user_id" FromRole="discount" ToRole="user_id" />
+  </EntityType>
+  <EntityType Name="product_id">
+    <Key>
+      <PropertyRef Name="product_id1" />
+    </Key>
+    <Property Name="product_id1" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="details" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="serial_number" Type="Int32" Nullable="false" />
+    <Property Name="category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="C_order_" Relationship="Self.FK_user_product_product" FromRole="product_id" ToRole="C_order_" />
+    <NavigationProperty Name="discounts" Relationship="Self.FK_discount_product_id" FromRole="product_id" ToRole="discount" />
+  </EntityType>
+  <EntityType Name="user_id">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="first_Name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="last_Name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="balance" Type="Int32" />
+    <NavigationProperty Name="discount" Relationship="Self.FK_discount_user_id" FromRole="user_id" ToRole="discount" />
+  </EntityType>
+  <Association Name="FK_user_product_product">
+    <End Role="product_id" Type="Self.product_id" Multiplicity="1" />
+    <End Role="C_order_" Type="Self.C_order_" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product_id">
+        <PropertyRef Name="product_id1" />
+      </Principal>
+      <Dependent Role="C_order_">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_discount_product_id">
+    <End Role="product_id" Type="Self.product_id" Multiplicity="1" />
+    <End Role="discount" Type="Self.discount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product_id">
+        <PropertyRef Name="product_id1" />
+      </Principal>
+      <Dependent Role="discount">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_discount_user_id">
+    <End Role="user_id" Type="Self.user_id" Multiplicity="1" />
+    <End Role="discount" Type="Self.discount" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="user_id">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="discount">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OnlineStoreEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C_order_" EntityType="Self.C_order_" />
+    <EntitySet Name="discounts" EntityType="Self.discount" />
+    <EntitySet Name="product_id" EntityType="Self.product_id" />
+    <EntitySet Name="user_id" EntityType="Self.user_id" />
+    <AssociationSet Name="FK_user_product_product" Association="Self.FK_user_product_product">
+      <End Role="product_id" EntitySet="product_id" />
+      <End Role="C_order_" EntitySet="C_order_" />
+    </AssociationSet>
+    <AssociationSet Name="FK_discount_product_id" Association="Self.FK_discount_product_id">
+      <End Role="product_id" EntitySet="product_id" />
+      <End Role="discount" EntitySet="discounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_discount_user_id" Association="Self.FK_discount_user_id">
+      <End Role="user_id" EntitySet="user_id" />
+      <End Role="discount" EntitySet="discounts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

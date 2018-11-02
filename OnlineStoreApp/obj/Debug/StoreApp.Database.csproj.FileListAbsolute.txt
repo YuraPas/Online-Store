@@ -1,0 +1,33 @@
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\OnlineStoreApp.dll.config
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\OnlineStoreApp.dll
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\OnlineStoreApp.pdb
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\AutoMapper.dll
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\EntityFramework.dll
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\System.ValueTuple.dll
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\AutoMapper.pdb
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\AutoMapper.xml
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\EntityFramework.xml
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\bin\Debug\System.ValueTuple.xml
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\obj\Debug\OnlineStoreApp.dll
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\obj\Debug\OnlineStoreApp.pdb
+C:\Users\MISHEL\documents\visual studio 2013\Projects\OnlineStoreApp\OnlineStoreApp\obj\Debug\StoreApp.Database.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\OnlineStoreApp.dll.config
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\OnlineStoreApp.dll
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\OnlineStoreApp.pdb
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\AutoMapper.dll
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\EntityFramework.dll
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\System.ValueTuple.dll
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\AutoMapper.pdb
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\AutoMapper.xml
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\EntityFramework.xml
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\bin\Debug\System.ValueTuple.xml
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\obj\Debug\StoreApp.Database.csprojResolveAssemblyReference.cache
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\obj\Debug\OnlineStoreApp.dll
+C:\Users\MISHEL\Documents\Visual Studio 2013\Projects\OnlineStoreApp\StoreDAL\OnlineStoreApp\obj\Debug\OnlineStoreApp.pdb
+=======
+>>>>>>> fa22a9e5bffa87148bd559988dccdc9baee7aaf1
