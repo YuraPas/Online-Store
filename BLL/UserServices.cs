@@ -8,5 +8,6 @@ namespace BusinessLogicLayer
 {
     public class UserServices
     {
+        //service logic
     }
 }
