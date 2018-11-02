@@ -51,21 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="ConsoleProgram.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BL\BLL.csproj">
-      <Project>{582c6f62-f6db-4417-b85c-0c95613b01ac}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-=======
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
->>>>>>> fa22a9e5bffa87148bd559988dccdc9baee7aaf1
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{e229c2aa-4764-4ba4-816c-efbe5794f8cb}</Project>
       <Name>DAL</Name>
